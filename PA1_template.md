@@ -137,20 +137,22 @@ The difference in mean and median values are
 
 ```r
 meanCompleteSteps <- mean( totalCompletesteps$steps )
-message( "New mean after data imputation: ",  meanCompleteSteps )
+message( "New mean after data imputation: ",  
+         format( meanCompleteSteps, digit = 3) )
 ```
 
 ```
-## New mean after data imputation: 10766.1883278689
+## New mean after data imputation: 10766
 ```
 
 ```r
 medianCompleteSteps <- median( totalCompletesteps$steps )
-message( "New median after data imputation: ", medianCompleteSteps )
+message( "New median after data imputation: ", 
+         format( medianCompleteSteps, digit = 3) )
 ```
 
 ```
-## New median after data imputation: 10766.186
+## New median after data imputation: 10766
 ```
 
 

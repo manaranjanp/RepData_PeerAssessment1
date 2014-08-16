@@ -307,17 +307,19 @@ hist(totalCompletesteps$steps,
 <p>The difference in mean and median values are </p>
 
 <pre><code class="r">meanCompleteSteps &lt;- mean( totalCompletesteps$steps )
-message( &quot;New mean after data imputation: &quot;,  meanCompleteSteps )
+message( &quot;New mean after data imputation: &quot;,  
+         format( meanCompleteSteps, digit = 3) )
 </code></pre>
 
-<pre><code>## New mean after data imputation: 10766.1883278689
+<pre><code>## New mean after data imputation: 10766
 </code></pre>
 
 <pre><code class="r">medianCompleteSteps &lt;- median( totalCompletesteps$steps )
-message( &quot;New median after data imputation: &quot;, medianCompleteSteps )
+message( &quot;New median after data imputation: &quot;, 
+         format( medianCompleteSteps, digit = 3) )
 </code></pre>
 
-<pre><code>## New median after data imputation: 10766.186
+<pre><code>## New median after data imputation: 10766
 </code></pre>
 
 <pre><code class="r">diffMean &lt;- meanCompleteSteps - as.numeric( meanSteps )
